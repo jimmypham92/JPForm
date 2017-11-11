@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C92D8381FB5AC2E0026B68D /* JPCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D8371FB5AC2E0026B68D /* JPCollectionViewLayout.swift */; };
+		6C92D83A1FB5AF0C0026B68D /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D8391FB5AF0C0026B68D /* TestCollectionViewCell.swift */; };
+		6C92D83C1FB5BE490026B68D /* FormCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D83B1FB5BE490026B68D /* FormCollectionHeaderView.swift */; };
+		6C92D84A1FB6056A0026B68D /* StringConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D8491FB6056A0026B68D /* StringConst.swift */; };
+		6C92D84C1FB71DFD0026B68D /* HeaderLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D84B1FB71DFD0026B68D /* HeaderLogCell.swift */; };
+		6C92D84E1FB71E390026B68D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D84D1FB71E390026B68D /* BaseCell.swift */; };
+		6C92D8501FB71E810026B68D /* UnitLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D84F1FB71E810026B68D /* UnitLogCell.swift */; };
+		6C92D8541FB721490026B68D /* HeaderPersonnelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C92D8531FB721490026B68D /* HeaderPersonnelCell.swift */; };
 		6C93BFF61FB586F100627A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93BFF51FB586F100627A76 /* AppDelegate.swift */; };
 		6C93BFF81FB586F100627A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93BFF71FB586F100627A76 /* ViewController.swift */; };
 		6C93BFFB1FB586F100627A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C93BFF91FB586F100627A76 /* Main.storyboard */; };
 		6C93BFFD1FB586F100627A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C93BFFC1FB586F100627A76 /* Assets.xcassets */; };
 		6C93C0001FB586F100627A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C93BFFE1FB586F100627A76 /* LaunchScreen.storyboard */; };
+		77F891812C1AF1797AB28BDA /* Pods_JPForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A969A9A03F909876C22476 /* Pods_JPForm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52E50C9DED5FD338B9A9E0B8 /* Pods-JPForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPForm/Pods-JPForm.debug.xcconfig"; sourceTree = "<group>"; };
+		6C92D8371FB5AC2E0026B68D /* JPCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCollectionViewLayout.swift; sourceTree = "<group>"; };
+		6C92D8391FB5AF0C0026B68D /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C92D83B1FB5BE490026B68D /* FormCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCollectionHeaderView.swift; sourceTree = "<group>"; };
+		6C92D8491FB6056A0026B68D /* StringConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConst.swift; sourceTree = "<group>"; };
+		6C92D84B1FB71DFD0026B68D /* HeaderLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderLogCell.swift; sourceTree = "<group>"; };
+		6C92D84D1FB71E390026B68D /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		6C92D84F1FB71E810026B68D /* UnitLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitLogCell.swift; sourceTree = "<group>"; };
+		6C92D8531FB721490026B68D /* HeaderPersonnelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPersonnelCell.swift; sourceTree = "<group>"; };
 		6C93BFF21FB586F100627A76 /* JPForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C93BFF51FB586F100627A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C93BFF71FB586F100627A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,8 @@
 		6C93BFFC1FB586F100627A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C93BFFF1FB586F100627A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C93C0011FB586F100627A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6923BED3A34C6A8CF87A05A /* Pods-JPForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPForm/Pods-JPForm.release.xcconfig"; sourceTree = "<group>"; };
+		F2A969A9A03F909876C22476 /* Pods_JPForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F891812C1AF1797AB28BDA /* Pods_JPForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CF05973E41A4C06E0FC4642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A969A9A03F909876C22476 /* Pods_JPForm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C92D83F1FB5E02B0026B68D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C92D8401FB5E0F10026B68D /* Cell */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C92D8401FB5E0F10026B68D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C92D84D1FB71E390026B68D /* BaseCell.swift */,
+				6C92D84F1FB71E810026B68D /* UnitLogCell.swift */,
+				6C92D84B1FB71DFD0026B68D /* HeaderLogCell.swift */,
+				6C92D8531FB721490026B68D /* HeaderPersonnelCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6C93BFE91FB586F100627A76 = {
 			isa = PBXGroup;
 			children = (
 				6C93BFF41FB586F100627A76 /* JPForm */,
 				6C93BFF31FB586F100627A76 /* Products */,
+				A54B27B5BF925E3D7625AA17 /* Pods */,
+				1CF05973E41A4C06E0FC4642 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +104,28 @@
 		6C93BFF41FB586F100627A76 /* JPForm */ = {
 			isa = PBXGroup;
 			children = (
+				6C92D83F1FB5E02B0026B68D /* Base */,
 				6C93BFF51FB586F100627A76 /* AppDelegate.swift */,
 				6C93BFF71FB586F100627A76 /* ViewController.swift */,
+				6C92D8371FB5AC2E0026B68D /* JPCollectionViewLayout.swift */,
 				6C93BFF91FB586F100627A76 /* Main.storyboard */,
 				6C93BFFC1FB586F100627A76 /* Assets.xcassets */,
 				6C93BFFE1FB586F100627A76 /* LaunchScreen.storyboard */,
 				6C93C0011FB586F100627A76 /* Info.plist */,
+				6C92D8391FB5AF0C0026B68D /* TestCollectionViewCell.swift */,
+				6C92D83B1FB5BE490026B68D /* FormCollectionHeaderView.swift */,
+				6C92D8491FB6056A0026B68D /* StringConst.swift */,
 			);
 			path = JPForm;
+			sourceTree = "<group>";
+		};
+		A54B27B5BF925E3D7625AA17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52E50C9DED5FD338B9A9E0B8 /* Pods-JPForm.debug.xcconfig */,
+				C6923BED3A34C6A8CF87A05A /* Pods-JPForm.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C93C0041FB586F100627A76 /* Build configuration list for PBXNativeTarget "JPForm" */;
 			buildPhases = (
+				3E0DAD0E77093CC71F8C1E93 /* [CP] Check Pods Manifest.lock */,
 				6C93BFEE1FB586F100627A76 /* Sources */,
 				6C93BFEF1FB586F100627A76 /* Frameworks */,
 				6C93BFF01FB586F100627A76 /* Resources */,
+				85F50D46AC46736EE93E1A41 /* [CP] Embed Pods Frameworks */,
+				CF162501C2567CAC7CC58EF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +198,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E0DAD0E77093CC71F8C1E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JPForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85F50D46AC46736EE93E1A41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JPForm/Pods-JPForm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPForm/Pods-JPForm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF162501C2567CAC7CC58EF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPForm/Pods-JPForm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C93BFEE1FB586F100627A76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C92D84A1FB6056A0026B68D /* StringConst.swift in Sources */,
 				6C93BFF81FB586F100627A76 /* ViewController.swift in Sources */,
+				6C92D84C1FB71DFD0026B68D /* HeaderLogCell.swift in Sources */,
 				6C93BFF61FB586F100627A76 /* AppDelegate.swift in Sources */,
+				6C92D83A1FB5AF0C0026B68D /* TestCollectionViewCell.swift in Sources */,
+				6C92D8541FB721490026B68D /* HeaderPersonnelCell.swift in Sources */,
+				6C92D8381FB5AC2E0026B68D /* JPCollectionViewLayout.swift in Sources */,
+				6C92D8501FB71E810026B68D /* UnitLogCell.swift in Sources */,
+				6C92D84E1FB71E390026B68D /* BaseCell.swift in Sources */,
+				6C92D83C1FB5BE490026B68D /* FormCollectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +401,13 @@
 		};
 		6C93C0051FB586F100627A76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E50C9DED5FD338B9A9E0B8 /* Pods-JPForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXZTH4YA3;
 				INFOPLIST_FILE = JPForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jimmy.JPForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +418,13 @@
 		};
 		6C93C0061FB586F100627A76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6923BED3A34C6A8CF87A05A /* Pods-JPForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXZTH4YA3;
 				INFOPLIST_FILE = JPForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jimmy.JPForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
