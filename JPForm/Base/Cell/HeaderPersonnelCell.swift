@@ -19,7 +19,7 @@ class HeaderPersonnelCell: BaseCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layout() {
+    override func config() {
     }
     
 }

@@ -48,7 +48,7 @@ extension ViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
-            return 6
+            return 7
         }
         return 30
     }
@@ -56,25 +56,23 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let section = indexPath.section
         let item = indexPath.item
-        let row = indexPath.row
         
-        if section == 0 && item == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderLogCell", for: indexPath) as! HeaderLogCell
-            return cell
-        } else if section == 0 && item != 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
-            cell.setLabelWithItem(item)
-            return cell
-        } else if section == 1 && row == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
-            cell.setLabelWithItem(item)
-            return cell
-        } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
-            cell.setLabelWithItem(item)
-            return cell
+        var cell: BaseCell
+        
+        switch (section, item) {
+        case (0, 0):
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderLogCell", for: indexPath) as! HeaderLogCell
+        case (0, let i) where i != 0:
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
+        case (1, 0):
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
+        default:
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnitLogCell", for: indexPath) as! UnitLogCell
         }
     
+        cell.updateDataWithIndexPath(indexPath)
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -87,7 +85,7 @@ extension ViewController: UICollectionViewDataSource {
         if (kind == UICollectionElementKindSectionHeader) {
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "JPHeader", for: indexPath) as! FormCollectionHeaderView
             
-            if indexPath.row == 1 {
+            if indexPath.section == 1 {
                 headerView.setHeaderText("Header A")
             } else {
                 headerView.setHeaderText("Header B")
@@ -110,5 +108,40 @@ extension ViewController: UICollectionViewDataSource {
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let section = indexPath.section
+        let item = indexPath.item
+        let row = indexPath.row
+        
+        var size = CGSize(width: view.w / 3, height: 40)
+        
+        if section == 1 && item > 2 {
+            return size
+        }
+        
+        switch (section, item, row) {
+        case (0, let i, _) where !(2...3).contains(i):
+            size.height = 56
+        case (1, 0...2, _):
+            size.height = 56
+        case (0, 2...3, _):
+            size.width = view.w / 6
+            size.height = 56
+        case (2, 0, _):
+            size.width = view.w / 6
+            size.height = 56
+        case (2, 1, _):
+            size.width = view.w * 5 / 6
+            size.height = 56
+        case (2, let i, _) where i % 2 != 1:
+            size.width = view.w / 6
+        case (2, let i, _) where i % 2 == 1:
+            size.width = view.w * 5 / 6
+        default: break
+            
+        }
+        
+        return size
+    }
 }

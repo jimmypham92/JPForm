@@ -19,16 +19,18 @@ class HeaderLogCell: BaseCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layout() {
-        super.layout()
+    override func config() {
         backgroundColor = .red
         mainLabel.textColor = .white
-        mainLabel.text = "UNIT LOG"
         mainLabel.font = .systemFont(ofSize: 18, weight: .bold)
         mainLabel.snp.makeConstraints { (make) in
             make.centerY.equalToSuperview()
             make.left.equalTo(8)
         }
+    }
+    
+    override func updateDataWithIndexPath(_ indexPath: IndexPath) {
+        mainLabel.text = "UNIT LOG"
     }
     
 }

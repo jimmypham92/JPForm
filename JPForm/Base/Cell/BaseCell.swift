@@ -10,11 +10,14 @@ import UIKit
 
 open class BaseCell: UICollectionViewCell {
     
-    internal let mainLabel = UILabel()
+    internal let mainLabel: UILabel
     
     override init(frame: CGRect) {
+        self.mainLabel = UILabel()
         super.init(frame: frame)
+        
         layout()
+        config()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -28,4 +31,7 @@ open class BaseCell: UICollectionViewCell {
         
         contentView.addSubview(mainLabel)
     }
+    
+    internal func updateDataWithIndexPath(_ indexPath: IndexPath) {}
+    internal func config() {}
 }

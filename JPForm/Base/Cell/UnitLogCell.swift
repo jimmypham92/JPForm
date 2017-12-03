@@ -19,29 +19,14 @@ class UnitLogCell: BaseCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layout() {
-        super.layout()
+    override func config() {
         mainLabel.font = .systemFont(ofSize: 12, weight: .regular)
         mainLabel.snp.makeConstraints { (make) in
             make.left.top.equalTo(4)
         }
     }
     
-    func setLabelWithItem(_ item: Int) {
-        switch item {
-        case 1:
-            mainLabel.text = "B"
-        case 2:
-            mainLabel.text = "C"
-        case 3:
-            mainLabel.text = "D"
-        case 4:
-            mainLabel.text = "E"
-        case 5:
-            mainLabel.text = "F"
-        default: return
-        }
-        
+    override func updateDataWithIndexPath(_ indexPath: IndexPath) {
+        mainLabel.text = "Item: \(indexPath.item)"
     }
-    
 }
